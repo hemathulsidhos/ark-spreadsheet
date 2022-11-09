@@ -3,7 +3,10 @@ import os
 import shutil
 import zipfile
 
-#Batch download ARK metadata in CSV: arkimedes batch-download - iastate_lib IA5t@t3@rk5 --batch-format csv --batch-args "&column=dc.creator&column=dc.title&column=dc.date&column=dc.publisher&column=dc.type&column=_target"
+#Batch download ARK metadata in CSV: arkimedes batch-download - EZID username EZID password --batch-format csv --batch-args "&column=dc.creator&column=dc.title&column=dc.date&column=dc.publisher&column=dc.type&column=_target"
+
+#Note: Rename "filename" with the downloaded file name(5 instances).
+#Note: Replace file location (C:/Users/hemat/Documents/Notepad++) based on your system settings.
 
 #extract file
 
@@ -32,7 +35,6 @@ source = 'C:/Users/hemat/Documents/Notepad++/b9JRTe55Bv94as0f.xlsx'
 destination = 'C:/Users/hemat/Documents/Notepad++/ARK_Project.xlsx'
 
 os.rename(source, destination)
-
 
 path = 'ARK_Project.xlsx'
 df = pd.read_excel(path)

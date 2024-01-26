@@ -6,9 +6,9 @@ import warnings
 warnings.simplefilter(action='ignore',category=FutureWarning)
 import subprocess
 
-#Batch download ARK metadata in CSV: arkimedes batch-download - iastate_lib IA5t@t3@rk5 --batch-format csv --batch-args "&column=dc.creator&column=dc.title&column=dc.date&column=dc.publisher&column=dc.type&column=_target"
+#Batch download ARK metadata in CSV: arkimedes batch-download - EZIDUsername EZIDPassword --batch-format csv --batch-args "&column=dc.creator&column=dc.title&column=dc.date&column=dc.publisher&column=dc.type&column=_target"
 
-#arkimedes batch-download - iastate_lib IA5t@t3@rk5 --batch-format csv --batch-args "&column=dc.creator&column=dc.title&column=dc.date&column=dc.publisher&column=dc.type&column=_target" && python ark-spreadsheet-2.0.py
+#arkimedes batch-download - EZIDUsername EZIDPassword --batch-format csv --batch-args "&column=dc.creator&column=dc.title&column=dc.date&column=dc.publisher&column=dc.type&column=_target" && python ark-spreadsheet-2.0.py
 
 #***Make sure there is no zip and/or csv file in the directory_path***
 
